@@ -9,8 +9,8 @@ html {
   direction: rtl;
 }
 body {
-//   direction: rtl !important;
-//   text-align: right;
+  //   direction: rtl !important;
+  //   text-align: right;
   font-family: "vazir-regular" !important;
   background: $light;
   margin: 0;
@@ -26,14 +26,105 @@ body {
   font-weight: 400;
   color: $dark;
 }
-@media(max-width:420px) {
+@media (max-width: 420px) {
   .top-bar_price {
     font-size: 10px;
   }
 }
-@media(max-width:420px) {
+@media (max-width: 420px) {
   .top-bar_logo img {
     width: 73px;
     height: 25px;
+  }
+}
+.main-header {
+  background-color: rgba(255, 245, 224, 0.2);
+  .main-header_nav-links ul {
+    display: flex;
+    gap: 35px;
+    li {
+      list-style-type: none;
+      font-size: 18px;
+      a {
+        text-decoration: none;
+        color: black !important;
+        &:active {
+          color: #0e46a3 !important;
+        }
+      }
+    }
+  }
+}
+.main-header_nav-links-li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  color: #484848 !important;
+  text-shadow: 4px -3px 8px rgba(0, 0, 0, 0.13);
+}
+.main-header_items {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  span {
+    font-size: 22px;
+  }
+  a {
+    text-decoration: none;
+    color: black !important;
+    &:active {
+      color: #0e46a3 !important;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .main-header_items {
+    gap: 20px;
+    span {
+      font-size: 18px;
+    }
+  }
+}
+.main-header_search {
+  position: relative;
+}
+.main-header_items input {
+  transition: width 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.main-header_search .icon-search {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+}
+
+.landing-top-box_title {
+  position: absolute;
+  left: 15px;
+  bottom: 50px;
+  div {
+    font-size: 40px;
+  }
+}
+@media (max-width: 811px) {
+  .landing-top-box_title {
+    left: 15px;
+    bottom: 10px;
+    div {
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .landing-top-box_title {
+    left: 15px;
+    bottom: 10px;
+    div {
+      font-size: 22px;
+    }
   }
 }
