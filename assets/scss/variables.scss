@@ -1,0 +1,59 @@
+// Primary
+$primary:"#DBE4C6";
+$primary-400:"#E2E9D1";
+$primary-300:"#E9EFDD";
+$primary-200:"#F1F4E8";
+$primary-100:"#F8FAF4";
+
+
+// Secondary
+$secondary:"#FFF5E0";
+$secondary-400:"#FFF7E6";
+$secondary-300:"#FFF9EC";
+$secondary-200:"#FFFBF3";
+$secondary-100:"#FFFDF9";
+
+
+// Muted
+$muted:"#DDDDDD";
+$muted-400:"#E4E4E4";
+$muted-300:"#EBEBEB";
+$muted-200:"#F1F1F1";
+$muted-100:"#F8F8F8";
+
+
+// Dark
+$dark:"#000000";
+$dark-400:"#2E2E2E";
+$dark-300:"#444444";
+$dark-200:"#555555";
+$dark-100:"#717171";
+
+
+// Blue
+$blue:"#0E46A3";
+$blue-400:"#3E6BB5";
+$blue-300:"#6E90C8";
+$blue-200:"#9FB5DA";
+$blue-100:"#CFDAED";
+
+.truncation-clamp {
+  line-height: 20px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+
+  $sizes: 1, 2, 3, 4, 5;
+  @each $size in $sizes {
+    &.clamp-#{$size} {
+      -webkit-line-clamp: #{$size};
+      -moz-line-clamp: #{$size};
+      -ms-line-clamp: #{$size};
+      line-clamp: #{$size};
+    }
+  }
+}
