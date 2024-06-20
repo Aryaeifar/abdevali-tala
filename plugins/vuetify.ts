@@ -50,6 +50,12 @@ export default defineNuxtPlugin((app) => {
       locale: "fa",
       messages: { fa },
     },
+    theme: {
+      defaultTheme: "myCustomLightTheme",
+      themes: {
+        myCustomLightTheme,
+      },
+    },
   });
   app.vueApp.use(vuetify);
 });

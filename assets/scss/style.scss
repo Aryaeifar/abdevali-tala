@@ -1,7 +1,7 @@
-// @font-face {
-//   font-family: "iransans-regular";
-//   src: url("/assets/fonts/IRANSansX-Regular.woff");
-// }
+@font-face {
+  font-family: "vazir-regular";
+  src: url("/assets/fonts/vazir-regular.woff2");
+}
 html {
   font-size: 62.5%;
   height: 100%;
@@ -11,8 +11,8 @@ html {
 body {
 //   direction: rtl !important;
 //   text-align: right;
-//   font-family: "iransansNum-regular" !important;
-//   background: $light;
+  font-family: "vazir-regular" !important;
+  background: $light;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,4 +20,20 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100%;
+}
+.top-bar_price {
+  font-size: 12px;
+  font-weight: 400;
+  color: $dark;
+}
+@media(max-width:420px) {
+  .top-bar_price {
+    font-size: 10px;
+  }
+}
+@media(max-width:420px) {
+  .top-bar_logo img {
+    width: 73px;
+    height: 25px;
+  }
 }
