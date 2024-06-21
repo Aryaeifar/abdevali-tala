@@ -1,11 +1,17 @@
 <script setup>
 const searchInput = ref(null)
+// const expandInput = () => {
+//   searchInput.value.style.width = '17rem'
+// }
 const expandInput = () => {
-  searchInput.value.style.width = '17rem'
+  if (window.innerWidth <= 430) {
+    searchInput.value.style.width = '15rem'
+  } else {
+    searchInput.value.style.width = '17rem'
+  }
 }
-
 const shrinkInput = () => {
-  searchInput.value.style.width = '13rem'
+  searchInput.value.style.width = '11rem'
 }
 const drawer =  ref(null)
 </script>
