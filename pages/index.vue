@@ -134,7 +134,7 @@ const newest = ref([
     </div>
     <div class="mt-8 mt-md-16">
       <div class="poster-wrapper">
-        <img src="../assets/images/poster-1.JPG" alt="" class="w-100" />
+        <img src="../assets/images/poster-1.jpg" alt="" class="w-100" />
         <div class="poster-wrapper_text">
           با عشق هدیه بده، با جواهرات عبدولی خاطره بساز!
         </div>
