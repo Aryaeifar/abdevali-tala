@@ -6,6 +6,18 @@ const props = defineProps({
   },
 });
 const isLike = ref(false)
+const toggleLike = () => {
+  isLike.value = !isLike.value
+
+  // Add animation class
+  const likeIcon = document.querySelector('.icon-heart-fill, .icon-heart-line')
+  likeIcon.classList.add('animating')
+
+  // Remove animation class after animation ends
+  setTimeout(() => {
+    likeIcon.classList.remove('animating')
+  }, 300) // Duration of the animation in ms
+}
 </script>
 <template>
   <div class="card2-wrapper">
