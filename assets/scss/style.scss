@@ -103,7 +103,9 @@ body {
 .main-header_search .icon-search {
   position: absolute;
   left: 7px;
-  top: 12px;
+  // top: 12px;
+  top: 50%;
+    transform: translateY(-50%);
 }
 // .landing-top-box_img {
 //   border-radius: 24px;
