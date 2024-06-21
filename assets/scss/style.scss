@@ -105,7 +105,7 @@ body {
   left: 7px;
   // top: 12px;
   top: 50%;
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 // .landing-top-box_img {
 //   border-radius: 24px;
@@ -178,7 +178,7 @@ body {
         border-radius: 12px;
         font-size: 14px;
         .v-btn__content {
-          letter-spacing : 0
+          letter-spacing: 0;
         }
       }
     }
@@ -232,10 +232,10 @@ body {
     .poster-wrapper_text3 {
       font-size: 24px;
     }
-       img {
-    border-radius: 52px;
-    height: 276px;
-  }
+    img {
+      border-radius: 52px;
+      height: 276px;
+    }
   }
 }
 @media (max-width: 430px) {
@@ -245,11 +245,10 @@ body {
     .poster-wrapper_text3 {
       font-size: 16px;
     }
-     img {
-    border-radius: 24px;
-        height: 193px;
-
-  }
+    img {
+      border-radius: 24px;
+      height: 193px;
+    }
   }
 }
 .main-footer {
@@ -299,6 +298,28 @@ body {
   }
 }
 
-// .sidebar {
-//   width: 100% !important;
-// }
+.sidebar {
+  background-image: url("../../assets/images/sidebar-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  position: fixed;
+  height: calc(100% - 0px);
+  bottom: 0px;
+  width: 1000px;
+  padding: 2rem 1rem;
+  .v-list {
+    background-color: transparent;
+  }
+}
+@media (max-width: 430px) {
+  .sidebar {
+    background-position: right;
+
+    background-size: contain;
+  }
+}

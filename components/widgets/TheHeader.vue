@@ -13,7 +13,8 @@ const expandInput = () => {
 const shrinkInput = () => {
   searchInput.value.style.width = '11rem'
 }
-const drawer =  ref(null)
+const drawer = ref(false)
+// const drawer =  ref(null)
 </script>
 <template>
     <nav class="main-header d-flex justify-space-between align-center px-4 px-lg-16 py-6 ">
@@ -71,7 +72,25 @@ const drawer =  ref(null)
              <NuxtLink to="#"> <span class="icon-user main-header_items-icon"></span></NuxtLink>
         </div>
     </nav>
-     <v-navigation-drawer
+    <transition>
+          <div  v-if="drawer" class="sidebar">
+
+              <span class="icon-x px-5" role="button"  @click.stop="drawer = !drawer"></span>
+
+
+        <v-list density="compact" nav class="mt-2">
+          <v-list-item  title="خانه" value="خانه"></v-list-item>
+          <v-list-item title="مردانه" value="مردانه"></v-list-item>
+          <v-list-item  title="زنانه" value="زنانه"></v-list-item>
+          <v-list-item title="هدیه" value="هدیه"></v-list-item>
+          <v-list-item  title="داستان تو" value="داستان تو"></v-list-item>
+          <v-list-item title="تماس با ما" value="تماس با ما"></v-list-item>
+          <v-list-item  title="درباره ما" value="درباره ما"></v-list-item>
+          <v-list-item title="وبلاگ" value="وبلاگ"></v-list-item>
+        </v-list>
+            </div>
+    </transition>
+     <!-- <v-navigation-drawer
         image="../../assets/images/sidebar-bg.png"
         v-model="drawer"
         temporary
@@ -91,11 +110,19 @@ const drawer =  ref(null)
           <v-list-item  title="درباره ما" value="درباره ما"></v-list-item>
           <v-list-item title="وبلاگ" value="وبلاگ"></v-list-item>
         </v-list>
-      </v-navigation-drawer>
+      </v-navigation-drawer> -->
 </template>
 
 
 
 <style lang="scss" scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
 </style>
