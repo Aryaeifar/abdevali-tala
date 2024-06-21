@@ -36,7 +36,7 @@ const type2 = ref({
       perPage: 1,
       gap: 15,
     },
-    640: {
+    811: {
       perPage: 2,
       padding: { left: "3rem", right: "0" },
     },
@@ -98,7 +98,7 @@ const newest = ref([
       <v-row>
         <v-col cols="12" lg="7" sm="8">
           <div class="h-100 position-relative">
-            <img src="../assets/images/image1.png" alt="" class="w-100 h-100" />
+            <img src="../assets/images/image1.png" alt="" class="w-100 h-100 landing-top-box_img" />
             <div class="landing-top-box_title">
               <div class="mb-3 mb-md-6">عبدولی</div>
               <div class="">گنجینه ای از ظرافت و زیبایی</div>
@@ -134,7 +134,7 @@ const newest = ref([
     </div>
     <div class="mt-8 mt-md-16">
       <div class="poster-wrapper">
-        <img src="../assets/images/poster.png" alt="" class="w-100" />
+        <img src="../assets/images/poster-1.JPG" alt="" class="w-100" />
         <div class="poster-wrapper_text">
           با عشق هدیه بده، با جواهرات عبدولی خاطره بساز!
         </div>

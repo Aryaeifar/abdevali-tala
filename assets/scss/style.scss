@@ -105,6 +105,9 @@ body {
   left: 7px;
   top: 10px;
 }
+// .landing-top-box_img {
+//   border-radius: 24px;
+// }
 
 .landing-top-box_title {
   position: absolute;
@@ -172,6 +175,9 @@ body {
       .card2-wrapper_button {
         border-radius: 12px;
         font-size: 14px;
+        .v-btn__content {
+          letter-spacing : 0
+        }
       }
     }
   }
@@ -210,6 +216,11 @@ body {
     left: 5%;
     bottom: 33%;
   }
+  img {
+    border-radius: 52px;
+    height: 520px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -219,6 +230,10 @@ body {
     .poster-wrapper_text3 {
       font-size: 24px;
     }
+       img {
+    border-radius: 52px;
+    height: 276px;
+  }
   }
 }
 @media (max-width: 430px) {
@@ -228,6 +243,11 @@ body {
     .poster-wrapper_text3 {
       font-size: 16px;
     }
+     img {
+    border-radius: 24px;
+        height: 193px;
+
+  }
   }
 }
 .main-footer {
