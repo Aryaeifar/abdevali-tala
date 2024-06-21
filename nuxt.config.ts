@@ -7,11 +7,14 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
     pageTransition: { name: "page", mode: "out-in" },
     head: {
-      title: "Abdevali tala",
+      title: "طلای عبدولی",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
-      link: [{ rel: "stylesheet", href: "/assets/icomoon/style.css" }],
+      link: [
+        { rel: "stylesheet", href: "/assets/icomoon/style.css" },
+        { rel: "icon", type: "image/x-icon", href: "./favicon.ico" },
+      ],
     },
   },
   css: ["@/assets/scss/app.scss"],
