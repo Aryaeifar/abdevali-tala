@@ -7,6 +7,7 @@
       <WidgetsTheTopBar />
       <WidgetsTheHeader />
       <NuxtPage />
+      <WidgetsTheFooter />
     </v-app>
   </NuxtLayout>
 </template>

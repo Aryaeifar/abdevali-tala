@@ -41,6 +41,9 @@ const myCustomLightTheme: ThemeDefinition = {
     "Blue-100": "#CFDAED",
     "Blue-300": "#6E90C8",
     "Blue-200": "#9FB5DA",
+
+    // Other
+    red: "#C20000",
   },
 };
 export default defineNuxtPlugin((app) => {
