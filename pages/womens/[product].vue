@@ -44,13 +44,14 @@ const type2 = ref({
   pagination: false,
   arrows: false,
   breakpoints: {
-    540: {
+    600: {
       perPage: 1,
       gap: 15,
+       padding: { left: "3rem", right: "0" },
     },
     811: {
       perPage: 1,
-      padding: { left: "3rem", right: "0" },
+      padding: { left: "15rem", right: "0" },
     },
     1020: {
       perPage: 2,
@@ -59,16 +60,19 @@ const type2 = ref({
 });
 
 const newest = ref([
-  { name: "دستبند جتاش", img: "../../assets/images/sale1.png", price: "46900000" },
-  {
-    name: "پلاک مادرفرزند",
-    img: "../../assets/images/sale2.png",
-    price: "46900000",
-  },
-  { name: "پلاک پاپیلون", img: "../../assets/images/sale3.png", price: "46900000" },
   {
     name: "انگشتر سافایر",
-    img: "../../assets/images/sale4.png",
+    img: "../../assets/images/similar-1.png",
+    price: "46900000",
+  },
+  {
+    name: "گردنبند  پاپیلون",
+    img: "../../assets/images/similar-2.png",
+    price: "46900000",
+  },
+  {
+    name: "گردنبند مادر و فرزند",
+    img: "../../assets/images/similar-3.png",
     price: "46900000",
   },
 ]);
@@ -118,7 +122,9 @@ const newest = ref([
     </div>
     <div class="customise mt-8 mt-md-16">
       <div class="category_title">سفارشی سازی</div>
-      <div class="d-flex justify-space-between align-center d-flex flex-column flex-md-row">
+      <div
+        class="d-flex justify-space-between align-center d-flex flex-column flex-md-row"
+      >
         <div class="customise-info_selectboxes">
           <v-row>
             <v-col cols="6" lg="2">
@@ -187,7 +193,9 @@ const newest = ref([
             </v-col>
           </v-row>
         </div>
-        <div class="mt-6 mt-md-0 d-flex justify-end product-info_customize-btn-wrapper">
+        <div
+          class="mt-6 mt-md-0 d-flex justify-end product-info_customize-btn-wrapper"
+        >
           <v-btn class="product-info_customize-btn" variant="tonal" size="large"
             >محاسبه قیمت</v-btn
           >
@@ -195,12 +203,12 @@ const newest = ref([
       </div>
     </div>
     <div class="similar-products my-8 my-md-16">
-            <div class="category_title">محصولات مشابه</div>
-            <Splide :options="type2" aria-label="Most sales">
-              <SplideSlide v-for="(item, i) in newest" :key="i">
-                <CardsCard2 :items="item"  color="primary"/>
-              </SplideSlide>
-            </Splide>
+      <div class="category_title">محصولات مشابه</div>
+      <Splide :options="type2" aria-label="Most sales">
+        <SplideSlide v-for="(item, i) in newest" :key="i">
+          <CardsCard3 :items="item" color="primary" />
+        </SplideSlide>
+      </Splide>
     </div>
   </div>
 </template>
