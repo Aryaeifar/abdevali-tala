@@ -128,7 +128,7 @@ const newest = ref([
       <div class="category_title">پر فروش ترین ها</div>
       <Splide :options="type2" aria-label="Most sales">
         <SplideSlide v-for="(item, i) in mostSales" :key="i">
-          <CardsCard2 :items="item" />
+          <CardsCard2 :items="item" color="muted-100" />
         </SplideSlide>
       </Splide>
     </div>
@@ -144,7 +144,7 @@ const newest = ref([
       <div class="category_title">جدیدترین ها</div>
       <Splide :options="type2" aria-label="Most sales">
         <SplideSlide v-for="(item, i) in newest" :key="i">
-          <CardsCard2 :items="item" />
+          <CardsCard2 :items="item" color="muted-100" />
         </SplideSlide>
       </Splide>
     </div>

@@ -4,12 +4,8 @@ const props = defineProps({
     type: Object,
     required: true,
   },
-  color:{
-    type:String
-  }
 });
 const isLike = ref(false)
-
 </script>
 <template>
   <div class="card2-wrapper">
@@ -19,7 +15,7 @@ const isLike = ref(false)
           <span :class="isLike ? 'icon-heart-fill  text-red' : ' icon-heart-line' " role="button" @click="isLike = !isLike"></span>
       </div>
     </div>
-    <div :class="'pa-3  card2-wrapper_content bg-' + color " >
+    <div class="pa-3 bg-primary card2-wrapper_content" >
         {{items.name}}
         <div class="d-flex justify-space-between card2-wrapper_price align-center">
             {{items.price}} تومان
