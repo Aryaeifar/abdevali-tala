@@ -27,7 +27,10 @@ const numberFormat = (money) => {
         <div class="card3-wrapper_info-title mb-3">{{ items.name }}</div>
         <div class="card3-wrapper_info-price">{{numberFormat(items.price)}} تومان</div>
       </div>
-      <button class="bg-secondary-300  px-6 py-4 card3-wrapper_button" >مشاهده محصول</button >
+      <!-- <button class="bg-secondary-300  px-6 py-4 card3-wrapper_button" >مشاهده محصول</button > -->
+      <v-btn color="secondary-300 px-8 card3-wrapper_button" height="3rem" flat>
+        مشاهده محصول
+      </v-btn>
     </div>
   </div>
 </template>

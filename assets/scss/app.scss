@@ -1,2 +1,8 @@
+@use "vuetify" with (
+  $rounded: (
+    primary: 0,
+  )
+);
 @import "variables";
 @import "style";
+
