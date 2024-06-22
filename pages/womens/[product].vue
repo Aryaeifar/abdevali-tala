@@ -76,6 +76,9 @@ const newest = ref([
     price: "46900000",
   },
 ]);
+const numberFormat = (money) => {
+  return money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1،");
+};
 </script>
 <template>
   <div class="product px-4 px-lg-16 py-2">
@@ -108,7 +111,7 @@ const newest = ref([
             <div
               class="d-flex justify-space-between align-center product-info_price"
             >
-              قیمت: 49000000 تومان
+              قیمت: {{numberFormat(49000000)}} تومان
               <v-btn
                 class="bg-primary product-info_price-button"
                 size="x-large"

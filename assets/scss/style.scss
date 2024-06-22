@@ -6,6 +6,10 @@
   font-family: "vazir-d";
   src: url("/assets/fonts/vazir-d.woff");
 }
+@font-face {
+  font-family: "farsi-digit";
+  src: url("/assets/fonts/farsi-digit.woff2");
+}
 html {
   font-size: 62.5%;
   height: 100%;
@@ -15,7 +19,7 @@ html {
 body {
   //   direction: rtl !important;
   //   text-align: right;
-  font-family: "vazir-regular" !important;
+  font-family: "farsi-digit" !important;
   background: #ffffff;
   margin: 0;
   padding: 0;
@@ -215,6 +219,7 @@ body {
     justify-content: space-around;
     font-size: 20px;
     align-items: center;
+    border: 1px solid #DBE4C6;
     .card3-wrapper_button {
       border-radius: 16px;
     }

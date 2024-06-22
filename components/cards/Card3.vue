@@ -6,6 +6,9 @@ const props = defineProps({
   },
 });
 const isLike = ref(false);
+const numberFormat = (money) => {
+  return money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1،");
+};
 </script>
 <template>
   <div class="card3-wrapper">
@@ -22,9 +25,9 @@ const isLike = ref(false);
     <div class="card3-wrapper_info">
       <div>
         <div class="card3-wrapper_info-title mb-3">{{ items.name }}</div>
-        <div class="card3-wrapper_info-price">{{ items.price }} تومان</div>
+        <div class="card3-wrapper_info-price">{{numberFormat(items.price)}} تومان</div>
       </div>
-      <button class="bg-secondary-300  px-3 py-2 card3-wrapper_button" >مشاهده محصول</button >
+      <button class="bg-secondary-300  px-6 py-4 card3-wrapper_button" >مشاهده محصول</button >
     </div>
   </div>
 </template>
