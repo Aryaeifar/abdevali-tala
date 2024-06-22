@@ -144,7 +144,11 @@ const numberFormat = (money) => {
                 hide-details
                 menu-icon="mdi-chevron-down"
                 eager
-              ></v-select>
+              >
+              <!-- <template v-slot:item="{ props }">
+                <v-list-item class="bg-secondary-300 customize-button_item" v-bind="props"></v-list-item>
+              </template> -->
+              </v-select>
             </v-col>
             <v-col cols="6" lg="2">
               <v-select
