@@ -26,10 +26,10 @@ const drawer = ref(false);
           <NuxtLink to="#"> خانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="womens"> زنانه </NuxtLink>
+          <NuxtLink to="/category/womens"> زنانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="#"> مردانه </NuxtLink>
+          <NuxtLink to="/category/mens"> مردانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
           <NuxtLink to="#"> هدیه </NuxtLink>

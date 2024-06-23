@@ -6,17 +6,17 @@ const items = [
   {
     title: "خانه",
     disabled: false,
-    href: "#",
+    to: "/",
   },
   {
     title: "زنانه",
     disabled: false,
-    href: "#",
+    to: "/category/women",
   },
   {
     title: route.params.product,
     disabled: true,
-    href: "#",
+    to: "#",
   },
 ];
 const productInfo = [

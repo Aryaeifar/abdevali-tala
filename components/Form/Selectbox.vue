@@ -1,7 +1,5 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
-import { defineProps, defineEmits } from "vue";
-
 const props = defineProps({
   items: {
     type: Array,
