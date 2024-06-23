@@ -26,7 +26,7 @@ const drawer = ref(false);
           <NuxtLink to="#"> خانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="#"> زنانه </NuxtLink>
+          <NuxtLink to="womens"> زنانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
           <NuxtLink to="#"> مردانه </NuxtLink>
@@ -83,14 +83,14 @@ const drawer = ref(false);
       ></span>
 
       <v-list density="compact" nav class="mt-2">
-        <v-list-item title="خانه" value="خانه"></v-list-item>
-        <v-list-item title="مردانه" value="مردانه"></v-list-item>
-        <v-list-item title="زنانه" value="زنانه"></v-list-item>
-        <v-list-item title="هدیه" value="هدیه"></v-list-item>
-        <v-list-item title="داستان تو" value="داستان تو"></v-list-item>
-        <v-list-item title="تماس با ما" value="تماس با ما"></v-list-item>
-        <v-list-item title="درباره ما" value="درباره ما"></v-list-item>
-        <v-list-item title="وبلاگ" value="وبلاگ"></v-list-item>
+        <v-list-item title="خانه" value="خانه" @click.stop="drawer = !drawer" ></v-list-item>
+        <v-list-item title="مردانه" value="مردانه" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="زنانه" value="زنانه" to="womens" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="هدیه" value="هدیه" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="داستان تو" value="داستان تو" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="تماس با ما" value="تماس با ما" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="درباره ما" value="درباره ما" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="وبلاگ" value="وبلاگ" @click.stop="drawer = !drawer"></v-list-item>
       </v-list>
     </div>
   </transition>

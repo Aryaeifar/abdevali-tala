@@ -27,14 +27,6 @@ const productInfo = [
   { label: "ابعاد حدودی", value: "1.8, 1.82" },
   { label: "وزن طلا", value: "40 گرم" },
 ];
-const color = ref(null);
-const zanjirCount = ref(null);
-
-const plak = ref(null);
-
-const weight = ref(null);
-
-const slectboxItem = ref(["طلایی", "نقره ای"]);
 const type2 = ref({
   rewind: true,
   gap: "1rem",
@@ -79,6 +71,12 @@ const newest = ref([
 const numberFormat = (money) => {
   return money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1،");
 };
+const selectBoxitem = ref(['نقره ای', 'طلایی']);
+const selectedColor = ref('تغییر رنگ');
+const zanjirCount = ref('تعداد زنجیر');
+const plak = ref('تغییر پلاک');
+const weight = ref('وزن محصول');
+
 </script>
 <template>
   <div class="product px-4 px-lg-16 py-2">
@@ -131,6 +129,18 @@ const numberFormat = (money) => {
         <div class="customise-info_selectboxes">
           <v-row>
             <v-col cols="6" lg="2">
+                   <FormSelectbox v-model="selectedColor" :items="selectBoxitem" />
+            </v-col>
+            <v-col cols="6" lg="2">
+                   <FormSelectbox v-model="zanjirCount" :items="selectBoxitem" />
+            </v-col>
+            <v-col cols="6" lg="2">
+                   <FormSelectbox v-model="plak" :items="selectBoxitem" />
+            </v-col>
+            <v-col cols="6" lg="2">
+                   <FormSelectbox v-model="weight" :items="selectBoxitem" />
+            </v-col>
+            <!-- <v-col cols="6" lg="2">
               <v-select
                 v-model="color"
                 :items="slectboxItem"
@@ -145,59 +155,12 @@ const numberFormat = (money) => {
                 menu-icon="mdi-chevron-down"
                 eager
               >
-              <!-- <template v-slot:item="{ props }">
+              <template v-slot:item="{ props }">
                 <v-list-item class="bg-secondary-300 customize-button_item" v-bind="props"></v-list-item>
-              </template> -->
+              </template>
               </v-select>
-            </v-col>
-            <v-col cols="6" lg="2">
-              <v-select
-                v-model="zanjirCount"
-                :items="slectboxItem"
-                label="تعداد زنجیر"
-                transition="fade-transition"
-                class="selectbox"
-                bg-color="secondary-300"
-                single-line
-                variant="solo"
-                flat
-                hide-details
-                menu-icon="mdi-chevron-down"
-                eager
-              ></v-select>
-            </v-col>
-            <v-col cols="6" lg="2">
-              <v-select
-                v-model="plak"
-                :items="slectboxItem"
-                label="تغییر پلاک"
-                transition="fade-transition"
-                class="selectbox"
-                bg-color="secondary-300"
-                single-line
-                variant="solo"
-                flat
-                hide-details
-                menu-icon="mdi-chevron-down"
-                eager
-              ></v-select>
-            </v-col>
-            <v-col cols="6" lg="2">
-              <v-select
-                v-model="weight"
-                :items="slectboxItem"
-                label="وزن محصول"
-                transition="fade-transition"
-                class="selectbox"
-                bg-color="secondary-300"
-                single-line
-                variant="solo"
-                flat
-                hide-details
-                menu-icon="mdi-chevron-down"
-                eager
-              ></v-select>
-            </v-col>
+            </v-col> -->
+
           </v-row>
         </div>
         <div
