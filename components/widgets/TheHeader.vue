@@ -85,7 +85,7 @@ const drawer = ref(false);
       <v-list density="compact" nav class="mt-2">
         <v-list-item title="خانه" value="خانه" @click.stop="drawer = !drawer" ></v-list-item>
         <v-list-item title="مردانه" value="مردانه" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="زنانه" value="زنانه" to="womens" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="زنانه" value="زنانه" to="/category/womens" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="هدیه" value="هدیه" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="داستان تو" value="داستان تو" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="تماس با ما" value="تماس با ما" @click.stop="drawer = !drawer"></v-list-item>
