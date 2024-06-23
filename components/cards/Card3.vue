@@ -23,9 +23,9 @@ const numberFormat = (money) => {
       ></span>
     </div>
     <div class="card3-wrapper_info">
-      <div class="card3-wrapper_info-title mb-3 ms-6">{{ items.name }}</div>
+      <div class="card3-wrapper_info-title mb-3">{{ items.name }}</div>
 
-      <div class="d-flex align-center justify-space-around">
+      <div class="d-flex align-center justify-space-between">
         <div class="card3-wrapper_info-price">
           {{ numberFormat(items.price) }} تومان
         </div>
@@ -33,6 +33,7 @@ const numberFormat = (money) => {
           color="secondary-300 px-8 card3-wrapper_button"
           height="3rem"
           flat
+          :to="items.link"
         >
           مشاهده محصول
         </v-btn>

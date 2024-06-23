@@ -39,7 +39,7 @@ const type2 = ref({
     600: {
       perPage: 1,
       gap: 15,
-       padding: { left: "3rem", right: "0" },
+      padding: { left: "3rem", right: "0" },
     },
     811: {
       perPage: 1,
@@ -56,27 +56,29 @@ const newest = ref([
     name: "انگشتر سافایر",
     img: "../../assets/images/similar-1.png",
     price: "46900000",
+    link: "product1",
   },
   {
     name: "گردنبند  پاپیلون",
     img: "../../assets/images/similar-2.png",
     price: "46900000",
+    link: "product1",
   },
   {
     name: "گردنبند مادر و فرزند",
     img: "../../assets/images/similar-3.png",
     price: "46900000",
+    link: "product1",
   },
 ]);
 const numberFormat = (money) => {
   return money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1،");
 };
-const selectBoxitem = ref(['نقره ای', 'طلایی']);
-const selectedColor = ref('تغییر رنگ');
-const zanjirCount = ref('تعداد زنجیر');
-const plak = ref('تغییر پلاک');
-const weight = ref('وزن محصول');
-
+const selectBoxitem = ref(["نقره ای", "طلایی"]);
+const selectedColor = ref("تغییر رنگ");
+const zanjirCount = ref("تعداد زنجیر");
+const plak = ref("تغییر پلاک");
+const weight = ref("وزن محصول");
 </script>
 <template>
   <div class="product px-4 px-lg-16 py-2">
@@ -109,7 +111,7 @@ const weight = ref('وزن محصول');
             <div
               class="d-flex justify-space-between align-center product-info_price"
             >
-              قیمت: {{numberFormat(49000000)}} تومان
+              قیمت: {{ numberFormat(49000000) }} تومان
               <v-btn
                 class="bg-primary product-info_price-button"
                 size="x-large"
@@ -129,16 +131,16 @@ const weight = ref('وزن محصول');
         <div class="customise-info_selectboxes">
           <v-row>
             <v-col cols="6" lg="2">
-                   <FormSelectbox v-model="selectedColor" :items="selectBoxitem" />
+              <FormSelectbox v-model="selectedColor" :items="selectBoxitem" />
             </v-col>
             <v-col cols="6" lg="2">
-                   <FormSelectbox v-model="zanjirCount" :items="selectBoxitem" />
+              <FormSelectbox v-model="zanjirCount" :items="selectBoxitem" />
             </v-col>
             <v-col cols="6" lg="2">
-                   <FormSelectbox v-model="plak" :items="selectBoxitem" />
+              <FormSelectbox v-model="plak" :items="selectBoxitem" />
             </v-col>
             <v-col cols="6" lg="2">
-                   <FormSelectbox v-model="weight" :items="selectBoxitem" />
+              <FormSelectbox v-model="weight" :items="selectBoxitem" />
             </v-col>
           </v-row>
         </div>

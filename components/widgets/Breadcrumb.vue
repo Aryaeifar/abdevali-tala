@@ -19,4 +19,9 @@ const props = defineProps({
     .mdi-chevron-right {
         transform: scale(-1);
     }
+    .breadcrumb {
+      .v-breadcrumbs {
+        padding: 16px 0;
+      }
+    }
 </style>

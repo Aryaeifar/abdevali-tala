@@ -23,9 +23,9 @@ const numberFormat = (money) => {
       ></span>
     </div>
     <div class="card4-wrapper_info">
-      <div class="card4-wrapper_info-title mb-3 ms-6">{{ items.name }}</div>
+      <div class="card4-wrapper_info-title mb-3">{{ items.name }}</div>
 
-      <div class="d-flex align-center justify-space-around">
+      <div class="d-flex align-center justify-space-between">
         <div class="card4-wrapper_info-price">
           {{ numberFormat(items.price) }} تومان
         </div>

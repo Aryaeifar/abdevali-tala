@@ -9,10 +9,15 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  bgColor:{
-      type:String,
-      required:false
-  }
+  bgColor: {
+    type: String,
+    required: false,
+  },
+   dropDownbgColor: {
+    type: String,
+    required: false,
+  },
+  
 });
 
 const emit = defineEmits(["update:modelValue"]);
@@ -62,14 +67,24 @@ onBeforeUnmount(() => {
 </script>
 <template>
   <div class="container">
-    <div :class="'selectbox bg-' +  bgColor" @click="toggleDropdown" :style="{backgroundColor:bgColor}" ref="selectBox">
+    <div
+      :class="'selectbox bg-' + bgColor"
+      @click="toggleDropdown"
+      :style="{ backgroundColor: bgColor }"
+      ref="selectBox"
+    >
       <div class="selected">{{ selected }}</div>
       <div :class="['icon', { 'icon--spin': showDropdown }]">
         <span class="mdi mdi-chevron-down"></span>
       </div>
     </div>
     <transition name="fade">
-      <div v-if="showDropdown" :class="'dropdown bg-' + bgColor" ref="dropdown" :style="{backgroundColor:bgColor}">
+      <div
+        v-if="showDropdown"
+        :class="'dropdown bg-' + bgColor"
+        ref="dropdown"
+        :style="{ backgroundColor: dropDownbgColor }"
+      >
         <div
           v-for="(item, index) in items"
           :key="index"
@@ -115,7 +130,8 @@ onBeforeUnmount(() => {
 
 .dropdown {
   position: absolute;
-  top: calc(100% + 10px); /* Adjust the gap here to keep the dropdown consistent */  left: 0;
+  top: calc(100% + 10px);
+  left: 0;
   right: 0;
   background-color: #fff9ec;
   border-radius: 16px;
@@ -131,7 +147,7 @@ onBeforeUnmount(() => {
 }
 
 .dropdown-item:hover {
-  background-color: #F1F4E8;
+  background-color: #f1f4e8;
 }
 
 .fade-enter-active,
