@@ -62,14 +62,14 @@ onBeforeUnmount(() => {
 </script>
 <template>
   <div class="container">
-    <div :class="'selectbox bg-' +  bgColor" @click="toggleDropdown" ref="selectBox">
+    <div :class="'selectbox bg-' +  bgColor" @click="toggleDropdown" :style="{backgroundColor:bgColor}" ref="selectBox">
       <div class="selected">{{ selected }}</div>
       <div :class="['icon', { 'icon--spin': showDropdown }]">
         <span class="mdi mdi-chevron-down"></span>
       </div>
     </div>
     <transition name="fade">
-      <div v-if="showDropdown" :class="'dropdown bg-' + bgColor" ref="dropdown">
+      <div v-if="showDropdown" :class="'dropdown bg-' + bgColor" ref="dropdown" :style="{backgroundColor:bgColor}">
         <div
           v-for="(item, index) in items"
           :key="index"
@@ -92,6 +92,7 @@ onBeforeUnmount(() => {
   transition: transform 0.3s ease-in-out;
   position: absolute;
   left: 0;
+  font-size: 30px;
 }
 
 .icon--spin {

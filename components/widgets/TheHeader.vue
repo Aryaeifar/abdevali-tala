@@ -23,7 +23,7 @@ const drawer = ref(false);
     <div class="main-header_nav-links d-none d-md-block">
       <ul>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="#"> خانه </NuxtLink>
+          <NuxtLink to="/"> خانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
           <NuxtLink to="/category/womens"> زنانه </NuxtLink>
@@ -83,7 +83,7 @@ const drawer = ref(false);
       ></span>
 
       <v-list density="compact" nav class="mt-2">
-        <v-list-item title="خانه" value="خانه" @click.stop="drawer = !drawer" ></v-list-item>
+        <v-list-item title="خانه" value="خانه" to="/" @click.stop="drawer = !drawer" ></v-list-item>
         <v-list-item title="مردانه" value="مردانه" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="زنانه" value="زنانه" to="/category/womens" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="هدیه" value="هدیه" @click.stop="drawer = !drawer"></v-list-item>

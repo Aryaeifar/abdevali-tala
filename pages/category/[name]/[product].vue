@@ -140,27 +140,6 @@ const weight = ref('وزن محصول');
             <v-col cols="6" lg="2">
                    <FormSelectbox v-model="weight" :items="selectBoxitem" />
             </v-col>
-            <!-- <v-col cols="6" lg="2">
-              <v-select
-                v-model="color"
-                :items="slectboxItem"
-                label="تغییر رنگ"
-                transition="fade-transition"
-                class="selectbox"
-                bg-color="secondary-300"
-                single-line
-                variant="solo"
-                flat
-                hide-details
-                menu-icon="mdi-chevron-down"
-                eager
-              >
-              <template v-slot:item="{ props }">
-                <v-list-item class="bg-secondary-300 customize-button_item" v-bind="props"></v-list-item>
-              </template>
-              </v-select>
-            </v-col> -->
-
           </v-row>
         </div>
         <div
