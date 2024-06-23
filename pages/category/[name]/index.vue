@@ -149,7 +149,7 @@ const list = ref([
         </v-col>
       </v-row>
     </div>
-    <div class="products-items my-8 my-md-10">
+    <div class="products-items my-0 my-md-10">
       <v-row>
         <v-col
           cols="12"

@@ -23,6 +23,7 @@ const type1 = ref({
     },
   },
 });
+
 const type2 = ref({
   rewind: true,
   gap: "1rem",
