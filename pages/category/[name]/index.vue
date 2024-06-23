@@ -113,7 +113,7 @@ const list = ref([
 <template>
   <div class="products px-4 px-lg-16 py-2">
     <WidgetsBreadcrumb :items="items" />
-    <div class="products-filter d-none d-lg-block my-8 my-md-10">
+    <div class="products-filter d-none d-lg-block">
       <v-row>
         <v-col lg="3">
           <FormSelectbox

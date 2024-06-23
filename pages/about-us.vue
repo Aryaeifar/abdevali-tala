@@ -16,7 +16,7 @@ const breadcrumb = [
 <template>
   <div class="about px-4 px-lg-16 py-2">
     <WidgetsBreadcrumb :items="breadcrumb" />
-    <div class="about-wrapper__firstPara my-8 my-md-10">
+    <div class="about-wrapper__firstPara mb-8 mb-md-10">
       <v-row>
         <v-col cols="12" sm="6">
           <div class="about-wrapper__img">

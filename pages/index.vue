@@ -93,7 +93,7 @@ const newest = ref([
 ]);
 </script>
 <template>
-  <div class="landing px-4 px-lg-16 py-2">
+  <div class="landing px-4 px-lg-16 py-2 mt-0 mt-lg-4">
     <div>
       <v-row>
         <v-col cols="12" lg="7" sm="8">
