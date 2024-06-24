@@ -753,3 +753,12 @@ body {
     }
   }
 }
+@media(max-width:430px) {
+  .contact {
+    .contact-wrapper {
+      .contact-wrapper_card {
+        height: 220px;
+      }
+    }
+  }
+}
