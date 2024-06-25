@@ -66,7 +66,7 @@ const toggle = (index) => {
   padding: 30px 16px;
   cursor: pointer;
   border-radius: 30px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .accordion-header i {
@@ -85,7 +85,7 @@ const toggle = (index) => {
   p {
     border-top: 1px solid rgba(0, 0, 0, 0.4);
     padding-top: 16px;
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 
