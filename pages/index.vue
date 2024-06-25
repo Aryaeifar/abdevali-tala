@@ -156,7 +156,7 @@ const newest = ref([
         </SplideSlide>
       </Splide>
     </div>
-    <div class="mt-8 mt-md-16">
+    <div class="my-8 my-md-16">
       <div class="poster-wrapper">
         <img src="../assets/images/poster2.png" alt="" class="w-100" />
         <div class="poster-wrapper_text2">بهترین روزت رو تا ابد ماندگار کن</div>

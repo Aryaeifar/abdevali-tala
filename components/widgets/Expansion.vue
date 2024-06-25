@@ -89,6 +89,24 @@ const toggle = (index) => {
   }
 }
 
+@media(max-width:1020px) {
+  .accordion-header {
+    font-size:20px;
+  }
+  .accordion-body p {
+    font-size:28px;
+  }
+}
+@media(max-width:430px) {
+  .accordion-header {
+    font-size:18px;
+    padding:16px 16px;
+  }
+  .accordion-body p {
+    font-size:16px;
+  }
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
