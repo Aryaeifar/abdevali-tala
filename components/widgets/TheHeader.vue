@@ -69,7 +69,7 @@ const drawer = ref(false);
       <NuxtLink to="#">
         <span class="icon-cart main-header_items-icon"></span
       ></NuxtLink>
-      <NuxtLink to="#">
+      <NuxtLink to="dashboard">
         <span class="icon-user main-header_items-icon"></span
       ></NuxtLink>
     </div>

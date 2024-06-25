@@ -1,8 +1,9 @@
 <script setup>
 </script>
 <template>
-  <NuxtLoadingIndicator color="rgb(245, 125, 129, var(--color-opacity))" :height="5"/>
   <NuxtLayout>
+      <NuxtLoadingIndicator color="rgb(245, 125, 129, var(--color-opacity))" :height="5" :throttle="5000"/>
+
     <v-app>
       <WidgetsTheTopBar />
       <WidgetsTheHeader />
