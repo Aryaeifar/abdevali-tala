@@ -133,6 +133,7 @@ body {
   div {
     font-size: 40px;
     font-family: "pinar";
+    font-weight: 500;
   }
 }
 @media (max-width: 811px) {
@@ -316,6 +317,7 @@ body {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-family: "pinar";
+    font-weight:500
   }
   .poster-wrapper_text2 {
     position: absolute;
@@ -324,6 +326,7 @@ body {
     right: 5%;
     top: 33%;
     font-family: "pinar";
+    font-weight:500
   }
   .poster-wrapper_text3 {
     position: absolute;
@@ -332,6 +335,7 @@ body {
     left: 5%;
     bottom: 33%;
     font-family: "pinar";
+    font-weight:500
   }
   img {
     border-radius: 52px;
