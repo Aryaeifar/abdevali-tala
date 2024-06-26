@@ -69,7 +69,7 @@ const drawer = ref(false);
       <NuxtLink to="#">
         <span class="icon-cart main-header_items-icon"></span
       ></NuxtLink>
-      <NuxtLink to="dashboard">
+      <NuxtLink to="/dashboard">
         <span class="icon-user main-header_items-icon"></span
       ></NuxtLink>
     </div>
@@ -88,9 +88,9 @@ const drawer = ref(false);
         <v-list-item title="زنانه" value="زنانه" to="/category/womens" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="هدیه" value="هدیه" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="داستان تو" value="داستان تو" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="تماس با ما" value="تماس با ما" to="contact-us" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="درباره ما" value="درباره ما" to="about-us" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="وبلاگ" value="وبلاگ" to="blog" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="تماس با ما" value="تماس با ما" to="/contact-us" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="درباره ما" value="درباره ما" to="/about-us" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="وبلاگ" value="وبلاگ" to="/blog" @click.stop="drawer = !drawer"></v-list-item>
       </v-list>
     </div>
   </transition>
