@@ -38,13 +38,13 @@ const drawer = ref(false);
           <NuxtLink to="#"> داستان تو </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="contact-us"> تماس با ما </NuxtLink>
+          <NuxtLink to="/contact-us"> تماس با ما </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
           <NuxtLink to="/about-us"> درباره ما </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="#"> وبلاگ </NuxtLink>
+          <NuxtLink to="/blog"> وبلاگ </NuxtLink>
         </li>
       </ul>
     </div>
@@ -90,7 +90,7 @@ const drawer = ref(false);
         <v-list-item title="داستان تو" value="داستان تو" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="تماس با ما" value="تماس با ما" to="contact-us" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="درباره ما" value="درباره ما" to="about-us" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="وبلاگ" value="وبلاگ" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="وبلاگ" value="وبلاگ" to="blog" @click.stop="drawer = !drawer"></v-list-item>
       </v-list>
     </div>
   </transition>
