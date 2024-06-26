@@ -10,6 +10,10 @@
   font-family: "farsi-digit";
   src: url("/assets/fonts/farsi-digit.woff2");
 }
+@font-face {
+  font-family: "pinar";
+  src: url("/assets/fonts/pinar-regular.woff2");
+}
 html {
   font-size: 62.5%;
   height: 100%;
@@ -128,6 +132,7 @@ body {
   bottom: 50px;
   div {
     font-size: 40px;
+    font-family: "pinar";
   }
 }
 @media (max-width: 811px) {
@@ -310,6 +315,7 @@ body {
     bottom: 20px;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    font-family: "pinar";
   }
   .poster-wrapper_text2 {
     position: absolute;
@@ -317,6 +323,7 @@ body {
     white-space: nowrap;
     right: 5%;
     top: 33%;
+    font-family: "pinar";
   }
   .poster-wrapper_text3 {
     position: absolute;
@@ -324,6 +331,7 @@ body {
     white-space: nowrap;
     left: 5%;
     bottom: 33%;
+    font-family: "pinar";
   }
   img {
     border-radius: 52px;
@@ -822,7 +830,7 @@ body {
       margin-top: 3rem;
       font-weight: 300;
       line-height: 34px;
-        text-align: justify;
+      text-align: justify;
     }
     .blog-wrapper_card-btn {
       margin-top: 3rem;
