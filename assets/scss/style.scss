@@ -768,3 +768,32 @@ body {
   border-radius: 30px;
   margin-bottom: 2rem;
  }
+ .dashboard-wrapper {
+  display: flex;
+  border-radius: 50px;
+  background-color: rgba(219, 228, 198, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  .dashboard-nav {
+    padding: 2rem;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 12rem;
+    .dashboard-nav_profile {
+      margin-bottom: 4rem;
+    }
+    .dashboard-nav_items {
+      .dashboard-nav_item {
+        text-align: center;
+        list-style: none;
+        margin-bottom: 3rem;
+        font-size: 16px;
+        a {
+          color: rgba(0, 0, 0, 1);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+ }
