@@ -16,7 +16,7 @@ const breadcrumb = [
 const links = [
   { link: "/dashboard/orders", name: "سفارشات" },
   { link: "/dashboard/info", name: "مشخصات شما" },
-  { link: "/dashboard/favorite", name: "علافه مندی ها" },
+  { link: "/dashboard/favorite", name: "علاقه مندی ها" },
 
   { link: "/dashboard/send-ticket", name: "ارسال تیکت" },
 

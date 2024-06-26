@@ -376,6 +376,7 @@ body {
   }
   .main-footer_text {
     font-size: 20px;
+    text-align: justify;
   }
   .main-footer_copyright {
     display: flex;
@@ -599,16 +600,19 @@ body {
   .about-wrapper__content-text1 {
     font-size: 20px;
     line-height: 50px;
+    text-align: justify;
   }
   .about-wrapper__content-text2 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
+    text-align: justify;
   }
   .about-wrapper__content-text3 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
+    text-align: justify;
   }
   .about-wrapper__img {
     height: 100%;
@@ -818,6 +822,7 @@ body {
       margin-top: 3rem;
       font-weight: 300;
       line-height: 34px;
+        text-align: justify;
     }
     .blog-wrapper_card-btn {
       margin-top: 3rem;
