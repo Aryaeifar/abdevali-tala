@@ -6,7 +6,7 @@
     <div class="d-flex justify-space-between align-center px-4 px-lg-16 py-2 bg-secondary">
         <div class="top-bar_logo">
             <NuxtLink to="/" >
-                <img src="../../assets/images/top-bar_logo.svg" alt="">
+                <img src="../../assets/images/top-bar_logo.svg" alt="logo-abdevali">
             </NuxtLink>
         </div>
         <div class="top-bar_price">

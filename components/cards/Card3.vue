@@ -13,7 +13,7 @@ const numberFormat = (money) => {
 <template>
   <div class="card3-wrapper">
     <div class="card3-wrapper_img">
-      <img :src="items.img" alt="" class="w-100" />
+      <img :src="items.img" :alt="items.name" class="w-100" />
     </div>
     <div class="card3-wrapper_like bg-primary-100 pa-4 rounded-circle">
       <span

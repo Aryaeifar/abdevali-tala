@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 <template>
     <div class="card1_wrapper">
-        <img :src="items.img" alt="" class="w-100">
+        <img :src="items.img" :alt="items.name" class="w-100">
         <div class="card1_title">
             {{items.name}}
         </div>

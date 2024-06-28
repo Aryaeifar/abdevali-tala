@@ -89,7 +89,7 @@ const weight = ref("وزن محصول");
           <div>
             <img
               src="@/assets/images/product-1.png"
-              alt=""
+              alt="abdevali"
               class="product__img"
             />
           </div>
@@ -124,7 +124,7 @@ const weight = ref("وزن محصول");
       </v-row>
     </div>
     <div class="customise mt-8 mt-md-16">
-      <div class="category_title">سفارشی سازی</div>
+      <h1 class="category_title">سفارشی سازی</h1>
       <div
         class="d-flex justify-space-between align-center d-flex flex-column flex-md-row"
       >
@@ -154,7 +154,7 @@ const weight = ref("وزن محصول");
       </div>
     </div>
     <div class="similar-products my-8 my-md-16">
-      <div class="category_title">محصولات مشابه</div>
+      <h1 class="category_title">محصولات مشابه</h1>
       <Splide :options="type2" aria-label="Most sales">
         <SplideSlide v-for="(item, i) in newest" :key="i">
           <CardsCard3 :items="item" color="primary" />

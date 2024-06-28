@@ -45,7 +45,7 @@ const breadcrumb = [
       </v-row>
     </div>
     <div class="map my-8 my-md-16">
-      <div class="category_title">آدرس گالری رو نقشه</div>
+      <h1 class="category_title">آدرس گالری رو نقشه</h1>
       <div class="map-wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51278.806351145104!2d53.03124920537781!3d36.55591171304011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f853fe39b5048f1%3A0x2a0a7b627a732bbe!2sSari%2C%20Mazandaran%20Province%2C%20Iran!5e0!3m2!1sen!2snl!4v1719224054786!5m2!1sen!2snl"

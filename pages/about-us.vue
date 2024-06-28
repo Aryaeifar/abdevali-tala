@@ -20,13 +20,13 @@ const breadcrumb = [
       <v-row>
         <v-col cols="12" sm="6">
           <div class="about-wrapper__img">
-            <img src="@/assets/images/para1.png" alt="" class="w-100" />
+            <img src="@/assets/images/para1.png" alt="jwelery-img" class="w-100" />
             <div class="mask"></div>
           </div>
         </v-col>
         <v-col cols="12" sm="6">
           <div class="about-wrapper__content">
-            <div class="about-wrapper__content-title mb-3">درباره عبدولی</div>
+            <h2 class="about-wrapper__content-title mb-3">درباره عبدولی</h2>
             <p class="about-wrapper__content-text about-wrapper__content-text1">
               گالری طلا عبدولی با سابقه‌ی [تعداد سال] سال در صنعت طلا و جواهر،
               مفتخر است که با ارائه زیورآلاتی نفیس و باکیفیت، تجربه‌ای منحصر به
@@ -42,7 +42,7 @@ const breadcrumb = [
       <v-row>
         <v-col cols="12" sm="6" class="order-2 order-sm-1">
           <div class="about-wrapper__content">
-            <div class="about-wrapper__content-title mb-3">ارزش‌های ما</div>
+            <h2 class="about-wrapper__content-title mb-3">ارزش‌های ما</h2>
             <p class="about-wrapper__content-text about-wrapper__content-text2">
               کیفیت: ما در گالری عبدولی بر استفاده از بهترین مواد اولیه و
               به‌کارگیری جدیدترین تکنیک‌های ساخت زیورآلات تأکید داریم.
@@ -59,7 +59,7 @@ const breadcrumb = [
         </v-col>
         <v-col cols="12" sm="6" class="order-1 order-sm-2">
           <div class="about-wrapper__img">
-            <img src="@/assets/images/para2.png" alt="" class="w-100" />
+            <img src="@/assets/images/para2.png" alt="jwelery-img" class="w-100" />
             <div class="mask"></div>
           </div>
         </v-col>
@@ -69,13 +69,13 @@ const breadcrumb = [
       <v-row>
         <v-col cols="12" sm="6">
           <div class="about-wrapper__img">
-            <img src="@/assets/images/para3.png" alt="" class="w-100" />
+            <img src="@/assets/images/para3.png" alt="jwelery-img" class="w-100" />
             <div class="mask"></div>
           </div>
         </v-col>
         <v-col cols="12" sm="6">
           <div class="about-wrapper__content">
-            <div class="about-wrapper__content-title mb-3">خدمات ما</div>
+            <h2 class="about-wrapper__content-title mb-3">خدمات ما</h2>
             <p class="about-wrapper__content-text about-wrapper__content-text3">
               فروش زیورآلات طلا و جواهر: ما در گالری عبدولی انواع زیورآلات طلا و
               جواهر، از جمله گردنبند، دستبند، انگشتر، گوشواره و ... را به

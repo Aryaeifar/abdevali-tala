@@ -61,7 +61,7 @@
       </v-col>
       <v-col>
           <div class="h-100 d-flex justify-space-between align-center">
-              <img src="../../assets/images/enamad.png" alt="" class="main-footer_enamad">
+              <img src="../../assets/images/enamad.png" alt="enamad" class="main-footer_enamad">
           </div>
       </v-col>
     </v-row>

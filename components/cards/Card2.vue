@@ -16,7 +16,7 @@ const numberFormat = (money) => {
 <template>
   <div class="card2-wrapper">
     <div class="card2-wrapper_img">
-      <img :src="items.img" alt="" class="w-100" />
+      <img :src="items.img" :alt="items.name" class="w-100" />
       <div class="card2-wrapper_like bg-primary-100 pa-4 rounded-circle">
           <span :class="isLike ? 'icon-heart-fill  text-red' : ' icon-heart-line' " role="button" @click="isLike = !isLike"></span>
       </div>
