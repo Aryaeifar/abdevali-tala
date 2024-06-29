@@ -44,6 +44,7 @@ const myCustomLightTheme: ThemeDefinition = {
 
     // Other
     red: "#C20000",
+    light:"#ffffff"
   },
 };
 export default defineNuxtPlugin((app) => {
