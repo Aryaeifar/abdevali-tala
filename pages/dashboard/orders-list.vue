@@ -1,5 +1,5 @@
 <script setup>
-const desserts = [
+const orders = [
   {
     name: "دستبند جتاش",
     price: 49000000,
@@ -37,7 +37,7 @@ const numberFormat = (money) => {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="item in desserts" :key="item.name">
+              <tr v-for="item in orders" :key="item.name">
                 <td>
                   <div
                     class="d-flex align-center dashboard-orders_product-thumb pa-3 gap-2"
@@ -61,6 +61,11 @@ const numberFormat = (money) => {
             </tbody>
           </v-table>
         </div>
+        <!-- <div class="dashboard-orders_orders-table-res">
+            <div class="dashboard-orders_orders-table-res-item" v-for="(item, i) in orders" :key="i">
+                {{ item.name }}a
+            </div>
+        </div> -->
       </div>
       <div class="dashboard-orders_orders mt-12">
         <h2 class="dashboard-orders_orders-title mb-6">سفارشات قبلی</h2>

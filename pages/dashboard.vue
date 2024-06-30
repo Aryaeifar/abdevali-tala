@@ -32,7 +32,7 @@ const links = [
       <div class="dashboard-nav">
         <div class="dashboard-nav_profile">
           <div>
-            <img src="@/assets/images/profile.png" alt="" class="">
+            <img src="@/assets/images/profile.png" alt="" class="" />
           </div>
           <div>ساغر طاهری</div>
         </div>
@@ -50,6 +50,20 @@ const links = [
         </ul>
       </div>
       <div class="dashboard-content w-100 py-16 px-10">
+        <NuxtPage />
+      </div>
+    </div>
+    <div class="dashboard-wrapper-responsive my-8">
+      <v-sheet class="mx-auto" max-width="600">
+        <v-slide-group show-arrows>
+          <v-slide-group-item v-for="(item, i) in links" :key="i">
+            <div :class="['dashboard-wrapper-res_tab-btn']" role="button">
+              <NuxtLink :to="item.link" :class="route.path === item.link ? 'text-Blue' : 'text-muted-500'" >{{ item.name }} </NuxtLink>
+            </div>
+          </v-slide-group-item>
+        </v-slide-group>
+      </v-sheet>
+      <div class="dashboard-content-res w-100">
         <NuxtPage />
       </div>
     </div>
