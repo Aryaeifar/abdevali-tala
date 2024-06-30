@@ -27,6 +27,7 @@ const myCustomLightTheme: ThemeDefinition = {
     "muted-100": "#F8F8F8",
     "muted-300": "#EBEBEB",
     "muted-200": "#F1F1F1",
+    "muted-500":"#D9D9D9",
 
     // Dark
     Dark: "#000000",
