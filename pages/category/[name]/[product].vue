@@ -28,6 +28,8 @@ const productInfo = [
   { label: "وزن طلا", value: "40 گرم" },
 ];
 const type2 = ref({
+  type: "loop",
+
   rewind: true,
   gap: "1rem",
   direction: "rtl",
