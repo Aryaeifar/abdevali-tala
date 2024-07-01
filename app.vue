@@ -1,18 +1,33 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <NuxtLayout>
-      <NuxtLoadingIndicator color="rgb(245, 125, 129, var(--color-opacity))" :height="5" :throttle="5000"/>
+    <NuxtLoadingIndicator
+      color="rgb(245, 125, 129, var(--color-opacity))"
+      :height="5"
+      :throttle="5000"
+    />
 
     <v-app>
       <WidgetsTheTopBar />
-      <WidgetsTheHeader />
-      <NuxtPage />
-      <WidgetsTheFooter />
+      <div class="layout-wrapper">
+        <WidgetsTheHeader />
+        <main>
+          <NuxtPage />
+        </main>
+        <WidgetsTheFooter />
+      </div>
     </v-app>
   </NuxtLayout>
 </template>
 <style>
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
 .layout-enter-active,
 .layout-leave-active {
   transition: all 0.3s;

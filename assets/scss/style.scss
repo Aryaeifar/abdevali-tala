@@ -934,7 +934,7 @@ body {
     .blog-details-wrapper_img {
       img {
         width: 100%;
-        height: 670px;
+        height: 470px;
         border-radius: 44px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         object-fit: cover;
@@ -974,7 +974,7 @@ body {
       .blog-details-wrapper_content-img {
         img {
           width: 100%;
-          height: 670px;
+          height: 470px;
           border-radius: 44px;
           object-fit: cover;
         }
@@ -1106,10 +1106,13 @@ body {
 @media (max-width: 1020px) {
   .story {
     .story-wrapper {
-      P {
-        font-size: 20px;
-        line-height: 34px;
+      .story-wrapper_info {
+        P {
+          font-size: 20px;
+          line-height: 34px;
+        }
       }
+
       .story-wrapper_img {
         img {
           height: 276px;
@@ -1129,10 +1132,13 @@ body {
 @media (max-width: 430px) {
   .story {
     .story-wrapper {
-      P {
-        font-size: 16px;
-        line-height: 27px;
+      .story-wrapper_info {
+        P {
+          font-size: 16px;
+          line-height: 27px;
+        }
       }
+
       .story-wrapper_img {
         img {
           height: 193px;
@@ -1154,7 +1160,10 @@ body {
     .account-wrapper_form {
       background-color: rgba(219, 228, 198, 0.2);
       padding: 3rem;
-      height: 100vh;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .account-wrapper_form-title {
         font-size: 32px;
         font-weight: 400;
@@ -1171,19 +1180,77 @@ body {
           }
         }
         .account-wrapper_form-actions {
-          display: flex;
-          justify-content: end;
+          .v-btn {
+            border-radius: 10px;
+          }
         }
       }
     }
     .account-wrapper_img {
       img {
-        height: 720px;
+        height: 620px;
         width: 100%;
         object-fit: cover;
       }
     }
   }
+} 
+@media(max-width:1020px) {
+  .account {
+  .account-wrapper {
+    .account-wrapper_form {
+      .account-wrapper_form-title {
+        font-size: 24px;
+      }
+      .account-wrapper_form-content {
+        width: 100%;
+        .account-wrapper_form-label {
+          font-size: 16px;
+        }
+        .account-wrapper_form-actions {
+          .v-btn {
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+    .account-wrapper_img {
+      img {
+        height: 475px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+} 
+}
+@media(max-width:430px) {
+  .account {
+    height: 100%;
+  .account-wrapper {
+    height: 100%;
+    .v-row {
+      height: 100%;
+    }
+    
+    .account-wrapper_form {
+      .account-wrapper_form-title {
+        font-size: 18px;
+      }
+      .account-wrapper_form-content {
+        width: 100%;
+        .account-wrapper_form-label {
+          font-size: 14px;
+        }
+        .account-wrapper_form-actions {
+          .v-btn {
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+} 
 }
 .error {
   .error-wrapper {
