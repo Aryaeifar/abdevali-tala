@@ -42,14 +42,14 @@ const links = [
             :key="i"
             :class="[
               'dashboard-nav_item ',
-              route.path === item.link ? 'active-dashboard-desk pa-3' : '',
+              route.path === item.link ? 'active-dashboard-desk px-5 py-3' : '',
             ]"
           >
             <NuxtLink :to="item.link"> {{ item.name }} </NuxtLink>
           </li>
         </ul>
       </div>
-      <div class="dashboard-content w-100 py-16 px-10">
+      <div class="dashboard-content w-100 py-2 px-10">
         <NuxtPage />
       </div>
     </div>

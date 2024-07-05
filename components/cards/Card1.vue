@@ -7,7 +7,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <div class="card1_wrapper">
+    <div class="card1_wrapper" role="button">
         <img :src="items.img" :alt="items.name" class="w-100">
         <div class="card1_title">
             {{items.name}}
