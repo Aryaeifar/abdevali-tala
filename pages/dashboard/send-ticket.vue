@@ -1,13 +1,27 @@
 <template>
-    <div>
-        ارسال تیکت
+  <div class="dashboard-send-ticket mb-6">
+    <h1 class="dashboard-send-ticket_title mb-10">ارسال تیکت</h1>
+    <div class="dashboard-send_wrapper">
+      <div class="dashboard-send_subject">
+        <div class="dashboard-send_subject-title mb-4">موضوع تیکت</div>
+        <div class="dahsboard-send_subject-input">
+          <input type="text" class="bg-light" />
+        </div>
+      </div>
+      <div class="dashboard-send_text">
+        <div class="dashboard-send_subject-text mb-4">موضوع تیکت</div>
+        <div class="dahsboard-send_subject-text-input">
+          <textarea type="text" class="bg-light" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="d-flex justify-end mt-6">
+        <v-btn class="dashboard-send_button" color="primary" flat
+          >ارسال</v-btn
+        >
+      </div>
     </div>
+  </div>
 </template>
+<script setup></script>
 
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

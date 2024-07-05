@@ -1477,3 +1477,110 @@ body {
     margin-bottom: 5rem;
   }
 }
+.dashboard-send-ticket {
+  .dashboard-send-ticket_title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .dashboard-send_wrapper {
+    .dashboard-send_subject {
+      margin-bottom: 2rem;
+      .dashboard-send_subject-title {
+        font-size: 20px;
+      }
+      .dahsboard-send_subject-input {
+        input {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 20px;
+          padding: 1rem;
+          width: 50%;
+        }
+      }
+    }
+    .dashboard-send_text {
+      .dashboard-send_subject-text {
+        font-size: 20px;
+      }
+      .dahsboard-send_subject-text-input {
+        textarea {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 20px;
+          padding: 1rem;
+          width: 100%;
+        }
+      }
+    }
+    .dashboard-send_button {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 0 2rem;
+      border-radius: 15px;
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .dashboard-send-ticket {
+    .dashboard-send-ticket_title {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    .dashboard-send_wrapper {
+      .dashboard-send_subject {
+        .dahsboard-send_subject-input {
+          input {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+      .dashboard-send_text {
+        .dahsboard-send_subject-text-input {
+          textarea {
+            border-radius: 15px;
+          }
+        }
+      }
+      .dashboard-send_button {
+        border-radius: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .dashboard-send-ticket {
+    .dashboard-send-ticket_title {
+      font-size: 16px;
+    }
+    .dashboard-send_wrapper {
+      .dashboard-send_subject {
+        .dashboard-send_subject-title {
+          font-size: 16px;
+        }
+        .dahsboard-send_subject-input {
+          input {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+      .dashboard-send_text {
+        .dashboard-send_subject-text {
+          font-size: 16px;
+        }
+        .dahsboard-send_subject-text-input {
+          textarea {
+            border-radius: 15px;
+          }
+        }
+      }
+      .dashboard-send_button {
+        font-size: 18px;
+      }
+    }
+  }
+}
