@@ -1409,7 +1409,7 @@ body {
     margin-bottom: 5rem;
   }
   .dashboard-info_item-label {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1020px) {
@@ -1516,7 +1516,8 @@ body {
       border: 1px solid rgba(0, 0, 0, 0.3);
       padding: 0 2rem;
       border-radius: 15px;
-      font-size: 30px;
+      font-size: 24px;
+      letter-spacing: 0;
     }
   }
 }
@@ -1581,6 +1582,77 @@ body {
       .dashboard-send_button {
         font-size: 18px;
       }
+    }
+  }
+}
+
+.dashboard-auth {
+  .dashboard-auth_title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .dashboard-auth_wrapper {
+    .dashboard-auth_wrapper-text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .dashboard-auth_wrapper-input {
+      display: flex;
+      align-items: center;
+      label {
+        font-size: 20px;
+        margin-left: 2rem;
+      }
+      input {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        width: 30rem;
+      }
+    }
+    .dashboard-auth_wrapper-input-expire {
+      display: flex;
+      align-items: center;
+      label {
+        font-size: 20px;
+        margin-left: 2rem;
+      }
+      .dashboard-auth_wrapper-expire-inputs {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 16px;
+        }
+        .dashboard-auth_wrapper-expire-input {
+          width: 4rem;
+          margin: 0 1rem;
+          text-align: center;
+        }
+        .dashboard-auth_wrapper-expire-input:focus-visible {
+          outline: none !important;
+        }
+      }
+    }
+    .dashboard-auth_wrapper-upload {
+      .dashboard-auth_wrapper-upload-btn {
+        letter-spacing: 0;
+        border-radius: 16px;
+        font-size: 18px;
+      }
+    }
+    .dashboard-send-button {
+      letter-spacing: 0;
+      border-radius: 16px;
+      font-size: 18px;
     }
   }
 }

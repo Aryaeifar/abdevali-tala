@@ -1,7 +1,6 @@
 <template>
     <div>
-        aaaaaaaaaa
-        <NuxtPage />
+        همه تیکت    
     </div>
 </template>
 
