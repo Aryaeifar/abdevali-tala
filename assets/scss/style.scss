@@ -1512,11 +1512,17 @@ body {
         }
       }
     }
+    .dashboard-send_upload-btn {
+      font-size: 20px;
+      border-radius: 16px;
+      letter-spacing: 0;
+      font-size: 16px;
+    }
     .dashboard-send_button {
       border: 1px solid rgba(0, 0, 0, 0.3);
       padding: 0 2rem;
       border-radius: 15px;
-      font-size: 24px;
+      font-size: 16px;
       letter-spacing: 0;
     }
   }
@@ -1595,50 +1601,37 @@ body {
   }
   .dashboard-auth_wrapper {
     .dashboard-auth_wrapper-text {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 25px;
     }
-    .dashboard-auth_wrapper-input {
-      display: flex;
+    .dashboard-auth_inputs {
       align-items: center;
-      label {
-        font-size: 20px;
-        margin-left: 2rem;
+      .dashboard-auth-label {
+        font-size: 18px;
       }
-      input {
-        background-color: #ffffff;
-        padding: 1rem;
+      .dashboard-auth-input {
         border-radius: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        width: 30rem;
-      }
-    }
-    .dashboard-auth_wrapper-input-expire {
-      display: flex;
-      align-items: center;
-      label {
-        font-size: 20px;
-        margin-left: 2rem;
-      }
-      .dashboard-auth_wrapper-expire-inputs {
+        padding: 0.8rem;
         background-color: #ffffff;
-        padding: 1rem;
-        border-radius: 16px;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        width: 15rem;
+        width: 100%;
+      }
+      .dashboard-auth-input-expire {
+        border-radius: 16px;
+        padding: 0.8rem;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        span {
-          font-size: 16px;
-        }
-        .dashboard-auth_wrapper-expire-input {
-          width: 4rem;
-          margin: 0 1rem;
+        align-items: center;
+        input {
+          width: 100%;
+          padding: 0 1rem;
           text-align: center;
-        }
-        .dashboard-auth_wrapper-expire-input:focus-visible {
-          outline: none !important;
+          &:focus-visible {
+            outline: none !important;
+          }
         }
       }
     }
@@ -1646,13 +1639,77 @@ body {
       .dashboard-auth_wrapper-upload-btn {
         letter-spacing: 0;
         border-radius: 16px;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
+
     .dashboard-send-button {
       letter-spacing: 0;
       border-radius: 16px;
-      font-size: 18px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .dashboard-auth {
+    .dashboard-auth_title {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+    .dashboard-auth_wrapper {
+      .dashboard-auth_wrapper-text {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .dashboard-auth_inputs {
+        align-items: center;
+        .dashboard-auth-label {
+          font-size: 16px;
+        }
+        .dashboard-auth-input {
+          border-radius: 16px;
+          padding: 0.8rem;
+          background-color: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          width: 100%;
+        }
+        .dashboard-auth-input-expire {
+          border-radius: 16px;
+          padding: 0.8rem;
+          background-color: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            width: 100%;
+            padding: 0 1rem;
+            text-align: center;
+            &:focus-visible {
+              outline: none !important;
+            }
+          }
+        }
+      }
+      .dashboard-auth_wrapper-up-text {
+        font-size: 14px;
+      }
+      .dashboard-auth_wrapper-upload {
+        .dashboard-auth_wrapper-upload-btn {
+          letter-spacing: 0;
+          border-radius: 16px;
+          font-size: 14px;
+        }
+      }
+      .dashboard-send-button {
+        letter-spacing: 0;
+        border-radius: 16px;
+        font-size: 14px;
+      }
     }
   }
 }
