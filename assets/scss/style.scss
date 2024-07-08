@@ -1713,3 +1713,70 @@ body {
     }
   }
 }
+
+.dashboard-ticket-inbox {
+  .dashboard-ticket-inbox_title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .dashboard-inbox_tabs {
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 1rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    .dashboard-inbox_tabs-item {
+      text-align: center;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      .router-link-exact-active {
+        background-color: #dbe4c6;
+        border-radius: 15px;
+        padding: 0.5rem 3rem;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .dashboard-ticket-inbox {
+    .dashboard-ticket-inbox_title {
+      font-size: 20px;
+    }
+    .dashboard-inbox_tabs {
+      border-radius: 30px;
+      padding: 1rem 2rem;
+      .dashboard-inbox_tabs-item {
+        font-size: 18px;
+        .router-link-exact-active {
+          border-radius: 12px;
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .dashboard-ticket-inbox {
+    .dashboard-ticket-inbox_title {
+      font-size: 18px;
+    }
+    .dashboard-inbox_tabs {
+      border-radius: 30px;
+      padding: 1rem;
+      .dashboard-inbox_tabs-item {
+        font-size: 12px;
+        .router-link-exact-active {
+          border-radius: 12px;
+          padding: 0.5rem 1rem;
+          text-overflow: nowrap;
+        }
+      }
+    }
+  }
+}

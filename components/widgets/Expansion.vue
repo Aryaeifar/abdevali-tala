@@ -44,8 +44,6 @@ const toggle = (index) => {
 <style lang="scss" scoped>
 .accordion {
   width: 100%;
-  // border: 1px solid #ddd;
-  // border-radius: 4px;
 }
 
 .accordion-item {

@@ -1,6 +1,5 @@
 <script setup>
 const route = useRoute();
-
 const breadcrumb = [
   {
     title: "خانه",
@@ -24,6 +23,7 @@ const links = [
 
   { link: "/dashboard/authentication", name: "احراز هویت" },
 ];
+const isActive = (link) => route.path.startsWith(link);
 </script>
 <template>
   <div class="dashboard px-4 px-lg-16 py-2">
@@ -42,7 +42,7 @@ const links = [
             :key="i"
             :class="[
               'dashboard-nav_item ',
-              route.path === item.link ? 'active-dashboard-desk px-5 py-3' : '',
+              isActive(item.link) ? 'active-dashboard-desk px-5 py-3' : '',
             ]"
           >
             <NuxtLink :to="item.link"> {{ item.name }} </NuxtLink>
@@ -58,7 +58,11 @@ const links = [
         <v-slide-group show-arrows>
           <v-slide-group-item v-for="(item, i) in links" :key="i">
             <div :class="['dashboard-wrapper-res_tab-btn']" role="button">
-              <NuxtLink :to="item.link" :class="route.path === item.link ? 'text-Blue' : 'text-muted-500'" >{{ item.name }} </NuxtLink>
+              <NuxtLink
+                :to="item.link"
+                :class="isActive(item.link) ? 'text-Blue' : 'text-muted-500'"
+                >{{ item.name }}
+              </NuxtLink>
             </div>
           </v-slide-group-item>
         </v-slide-group>

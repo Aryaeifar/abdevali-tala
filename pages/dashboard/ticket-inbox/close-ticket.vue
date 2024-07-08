@@ -1,6 +1,6 @@
 <template>
-    <div class="d-flex justify-center align-center">
-        همه تیکت    
+    <div>
+        بسته
     </div>
 </template>
 
