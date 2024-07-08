@@ -1,26 +1,3 @@
-<template>
-  <div>
-    <div class="accordion">
-      <div
-        v-for="(item, index) in accordionItems"
-        :key="index"
-        class="accordion-item mb-3"
-      >
-        <div class="accordion-header" @click="toggle(index)">
-          <span>{{ item.title }}</span>
-        </div>
-        <transition name="fade">
-          <div v-if="activeIndex === index" class="accordion-body">
-            <p>
-              {{ item.content }}
-            </p>
-          </div>
-        </transition>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
 const accordionItems = [
   {
@@ -63,6 +40,29 @@ const toggle = (index) => {
   activeIndex.value = activeIndex.value === index ? null : index;
 };
 </script>
+
+<template>
+  <div class="dashboard-accordion">
+    <div class="accordion">
+      <div
+        v-for="(item, index) in accordionItems"
+        :key="index"
+        class="accordion-item"
+      >
+        <div class="accordion-header" @click="toggle(index)">
+          <span>{{ item.title }}</span>
+        </div>
+        <transition name="fade">
+          <div v-if="activeIndex === index" class="accordion-body">
+            <p>
+              {{ item.content }}
+            </p>
+          </div>
+        </transition>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style lang="scss" scoped>
 .fade-enter-active,
