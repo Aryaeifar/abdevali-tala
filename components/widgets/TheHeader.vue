@@ -32,7 +32,7 @@ const drawer = ref(false);
           <NuxtLink to="/category/mens"> مردانه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
-          <NuxtLink to="#"> هدیه </NuxtLink>
+          <NuxtLink to="/gift"> هدیه </NuxtLink>
         </li>
         <li class="main-header_nav-links-li">
           <NuxtLink to="/story"> داستان تو </NuxtLink>
@@ -86,7 +86,7 @@ const drawer = ref(false);
         <v-list-item title="خانه" value="خانه" to="/" @click.stop="drawer = !drawer" ></v-list-item>
         <v-list-item title="مردانه" value="مردانه" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="زنانه" value="زنانه" to="/category/womens" @click.stop="drawer = !drawer"></v-list-item>
-        <v-list-item title="هدیه" value="هدیه" @click.stop="drawer = !drawer"></v-list-item>
+        <v-list-item title="هدیه" value="هدیه" to="/gift" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="داستان تو" value="داستان تو" to="/story" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="تماس با ما" value="تماس با ما" to="/contact-us" @click.stop="drawer = !drawer"></v-list-item>
         <v-list-item title="درباره ما" value="درباره ما" to="/about-us" @click.stop="drawer = !drawer"></v-list-item>

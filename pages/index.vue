@@ -102,14 +102,14 @@ const newest = ref([
         <v-col cols="12" lg="7" sm="8">
           <div class="h-100 position-relative">
             <img
-              src="../assets/images/image1.png"
-              alt="jwelery-abdevali"
-              class="w-100 h-100 landing-top-box_img"
-            />
-            <div class="landing-top-box_title">
-              <div class="mb-3 mb-md-6">عبدولی</div>
-              <div class="">گنجینه ای از ظرافت و زیبایی</div>
-            </div>
+                src="../assets/images/image1.png"
+                alt="jwelery-abdevali"
+                class="w-100 h-100 landing-top-box_img"
+              />
+              <div class="landing-top-box_title">
+                <div class="mb-3 mb-md-6">عبدولی</div>
+                <div class="">گنجینه ای از ظرافت و زیبایی</div>
+              </div>
           </div>
         </v-col>
         <v-col cols="3" lg="3" sm="4" class="d-none d-sm-block">

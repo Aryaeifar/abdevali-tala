@@ -1843,3 +1843,65 @@ body {
     }
   }
 }
+.gift {
+  .gift-wrapper {
+    margin-bottom: 3rem;
+    .category_title {
+      font-size: 20px;
+    }
+    .gift-wrapper_image {
+      img {
+        width: 100%;
+        border-radius: 44px;
+        height: 460px;
+        object-fit: cover;
+        object-position: 25% 85%;
+      }
+    }
+    .gift-wrapper_text {
+      margin-top: 3rem;
+      p {
+        font-size: 20px;
+        line-height: 37px;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: 20px;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .gift {
+    .gift-wrapper {
+      margin-bottom: 3rem;
+      .category_title {
+        font-size: 18px;
+      }
+      .gift-wrapper_image {
+        img {
+          border-radius: 28px;
+          height: 193px;
+          object-position: 25% 98%;
+        }
+      }
+      .gift-wrapper_text {
+        margin-top: 3rem;
+        p {
+          font-size: 16px;
+          line-height: 34px;
+        }
+        ul {
+          list-style: none;
+          li {
+            font-size: 16px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
