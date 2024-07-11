@@ -66,7 +66,7 @@ const drawer = ref(false);
         />
         <span class="icon-search"></span>
       </div>
-      <NuxtLink to="#">
+      <NuxtLink to="/cart">
         <span class="icon-cart main-header_items-icon"></span
       ></NuxtLink>
       <NuxtLink to="/dashboard/orders-list">
