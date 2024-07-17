@@ -35,36 +35,36 @@ body {
   scroll-behavior: smooth;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_success {
-  background-color: #94c270 !important;
+  background-color: rgba(148, 194, 112, 0.3) !important;
   color: black;
-  border: 1px solid #94c270 !important;
+  border: 1px solid rgba(148, 194, 112, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_success ._vue-flash-msg-body__content {
-  border-left: 1px solid #94c270 !important;
+  border-left: 1px solid rgba(148, 194, 112, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_error {
-  background-color: #dc2a2a !important;
+  background-color: rgba(220, 42, 42, 0.3) !important;
   color: black;
-  border: 1px solid #dc2a2a !important;
+  border: 1px solid rgba(220, 42, 42, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_error ._vue-flash-msg-body__content {
-  border-left: 1px solid #dc2a2a !important;
+  border-left: 1px solid rgba(220, 42, 42, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_warning {
-  background-color: #ffab00 !important;
+  background-color: rgba(255, 171, 0, 0.3) !important;
   color: black;
-  border: 1px solid #ffab00 !important;
+  border: 1px solid rgba(255, 171, 0, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_warning ._vue-flash-msg-body__content {
-  border-left: 1px solid #ffab00 !important;
+  border-left: 1px solid rgba(255, 171, 0, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_info {
-  background-color: #0e46a3 !important;
+  background-color: rgba(14, 70, 163, 0.3) !important;
   color: black;
-  border: 1px solid #0e46a3 !important;
+  border: 1px solid rgba(14, 70, 163, 0.3) !important;
 }
 ._vue-flash-msg-body._vue-flash-msg-body_info ._vue-flash-msg-body__content {
-  border-left: 1px solid #0e46a3 !important;
+  border-left: 1px solid rgba(14, 70, 163, 0.3) !important;
 }
 .top-bar_price {
   font-size: 12px;
