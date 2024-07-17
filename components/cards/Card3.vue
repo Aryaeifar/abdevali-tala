@@ -1,13 +1,31 @@
 <script setup>
+const { $flashMsg } = useNuxtApp();
+
 const props = defineProps({
   items: {
     type: Object,
     required: true,
   },
 });
-const isLike = ref(false);
 const numberFormat = (money) => {
   return money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1،");
+};
+const addToCart = () => {
+  $flashMsg.success({
+    text: ` به لیست سفارشات اضافه شد.`,
+  });
+};
+const addToFave = () => {
+  props.items.like = !props.items.like;
+  if (props.items.like) {
+    $flashMsg.success({
+      text: `به لیست علاقه مندی ها اضافه شد.`,
+    });
+  } else {
+    $flashMsg.error({
+      text: `از لیست علاقه مندی ها حذف شد.`,
+    });
+  }
 };
 </script>
 <template>
@@ -17,9 +35,9 @@ const numberFormat = (money) => {
     </div>
     <div class="card3-wrapper_like bg-primary-100 pa-4 rounded-circle">
       <span
-        :class="isLike ? 'icon-heart-fill  text-red' : ' icon-heart-line'"
+        :class="items.like ? 'icon-heart-fill  text-red' : ' icon-heart-line'"
         role="button"
-        @click="isLike = !isLike"
+        @click="addToFave"
       ></span>
     </div>
     <div class="card3-wrapper_info">

@@ -19,7 +19,7 @@ const links = [
 
   { link: "/dashboard/send-ticket", name: "ارسال تیکت" },
 
-  { link: "/dashboard/ticket-inbox", name: "تیکت ها" },
+  { link: "/dashboard/ticket-inbox/open-ticket", name: "تیکت ها" },
 
   { link: "/dashboard/authentication", name: "احراز هویت" },
 ];

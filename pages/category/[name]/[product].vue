@@ -1,6 +1,7 @@
 <script setup>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
+const { $flashMsg } = useNuxtApp();
 const route = useRoute();
 const items = [
   {
@@ -59,18 +60,21 @@ const newest = ref([
     img: "../../assets/images/similar-1.png",
     price: "46900000",
     link: "product1",
+    like:true
   },
   {
     name: "گردنبند  پاپیلون",
     img: "../../assets/images/similar-2.png",
     price: "46900000",
     link: "product1",
+    like:true
   },
   {
     name: "گردنبند مادر و فرزند",
     img: "../../assets/images/similar-3.png",
     price: "46900000",
     link: "product1",
+    like:true
   },
 ]);
 const numberFormat = (money) => {
@@ -81,6 +85,11 @@ const selectedColor = ref("تغییر رنگ");
 const zanjirCount = ref("تعداد زنجیر");
 const plak = ref("تغییر پلاک");
 const weight = ref("وزن محصول");
+const addToCart = () => {
+  $flashMsg.success({
+    text: ` به لیست سفارشات اضافه شد.`,
+  });
+};
 </script>
 <template>
   <div class="product px-4 px-lg-16 py-2">
@@ -118,6 +127,7 @@ const weight = ref("وزن محصول");
                 class="bg-primary product-info_price-button"
                 size="x-large"
                 variant="tonal"
+                @click="addToCart"
                 >افزودن به سبد خرید</v-btn
               >
             </div>

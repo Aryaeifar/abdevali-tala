@@ -18,7 +18,16 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/scss/app.scss"],
-
+  runtimeConfig: {
+    public: {
+      flashMessage: {
+        rtl: true,
+        time: 5000,
+        strategy: "multiple",
+        position: "left bottom",
+      },
+    },
+  },
   build: {
     transpile: ["vuetify"],
   },

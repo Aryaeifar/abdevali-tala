@@ -41,7 +41,7 @@ const blogs = [
                 {{ item.text }}
               </p>
               <div class="d-flex justify-end w-100 blog-wrapper_card-btn">
-                <v-btn color="primary" flat to="blog/blog-details"> ادامه مطلب </v-btn>
+                <v-btn color="primary blog-wrapper_card-btnn" flat to="blog/blog-details"> ادامه مطلب </v-btn>
               </div>
             </div>
           </v-col>
