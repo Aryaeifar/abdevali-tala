@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     public: {
       flashMessage: {
         rtl: true,
-        time: 5000,
+        time: 500000,
         strategy: "multiple",
         position: "left bottom",
       },
