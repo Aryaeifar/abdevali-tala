@@ -120,33 +120,10 @@ const newest = ref([
     like: true,
   },
 ]);
-const errorM = () => {
-  $flashMsg.error({
-    text: `این یک پیعام است`,
-  });
-};
-const warnM = () => {
-  $flashMsg.warning({
-    text: `این یک پیعام است`,
-  });
-};
-const successM = () => {
-  $flashMsg.success({
-    text: `این یک پیعام است`,
-  });
-};
-const infoM = () => {
-  $flashMsg.info({
-    text: `این یک پیعام است`,
-  });
-};
+
 </script>
 <template>
   <div class="landing px-4 px-lg-16 py-2 mt-0 mt-lg-4">
-    <v-btn color="info" @click="infoM"> info </v-btn>
-    <v-btn color="success" @click="successM"> success </v-btn>
-    <v-btn color="warn" @click="warnM"> warn </v-btn>
-    <v-btn color="error" @click="errorM"> error </v-btn>
     <div class="landing-banners">
       <v-row>
         <v-col cols="12" lg="7" sm="8">

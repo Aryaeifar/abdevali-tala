@@ -17,6 +17,28 @@ const productType = ref("نوع محصول");
 const productBrand = ref("برند محصول");
 const productAyar = ref("عیار محصول");
 const productWeight = ref("وزن تقریبی");
+// Function to run when any of the select boxes change
+const handleInputChange = (value, name) => {
+  console.log(`${name} changed to ${value}`);
+  // Add your logic here
+};
+
+// Watch for changes on each of the reactive variables
+watch(productType, (newValue) => {
+  handleInputChange(newValue, "productType");
+});
+
+watch(productBrand, (newValue) => {
+  handleInputChange(newValue, "productBrand");
+});
+
+watch(productAyar, (newValue) => {
+  handleInputChange(newValue, "productAyar");
+});
+
+watch(productWeight, (newValue) => {
+  handleInputChange(newValue, "productWeight");
+});
 const list = ref([
   {
     name: "انگشتر سافایر",
@@ -111,6 +133,9 @@ const list = ref([
 ]);
 </script>
 <template>
+  <div class="isloading-page">
+    <span class="loader"></span>
+  </div>
   <div class="products px-4 px-lg-16 py-2">
     <WidgetsBreadcrumb :items="items" />
     <div class="products-filter d-none d-lg-block">
@@ -120,7 +145,7 @@ const list = ref([
             v-model="productType"
             :items="productItem"
             bgColor="rgba(217, 217, 217, 0.09)"
-             dropDownbgColor="rgba(217, 217, 217, .9)"
+            dropDownbgColor="rgba(217, 217, 217, .9)"
           />
         </v-col>
         <v-col lg="3">
@@ -128,7 +153,7 @@ const list = ref([
             v-model="productBrand"
             :items="productItem"
             bgColor="rgba(217, 217, 217, 0.09)"
-             dropDownbgColor="rgba(217, 217, 217, .9)"
+            dropDownbgColor="rgba(217, 217, 217, .9)"
           />
         </v-col>
         <v-col lg="3">
@@ -136,7 +161,7 @@ const list = ref([
             v-model="productAyar"
             :items="productItem"
             bgColor="rgba(217, 217, 217, 0.09)"
-             dropDownbgColor="rgba(217, 217, 217, .9)"
+            dropDownbgColor="rgba(217, 217, 217, .9)"
           />
         </v-col>
         <v-col lg="3">
@@ -144,7 +169,7 @@ const list = ref([
             v-model="productWeight"
             :items="productItem"
             bgColor="rgba(217, 217, 217, 0.09)"
-             dropDownbgColor="rgba(217, 217, 217, .9)"
+            dropDownbgColor="rgba(217, 217, 217, .9)"
           />
         </v-col>
       </v-row>
