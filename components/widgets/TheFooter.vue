@@ -66,7 +66,7 @@
       </v-col>
     </v-row>
     <div class="main-footer_copyright text-Dark-100">
-        کلیه حقوق مادی و معنوی سایت متعلق به شرکت رنیسا می‌باشد
+        کلیه حقوق مادی و معنوی سایت متعلق به <a href="">شرکت رنیسا</a> می‌باشد
     </div>
   </div>
 </template>

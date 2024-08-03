@@ -67,7 +67,7 @@ const numberFormat = (money) => {
             </div>
         </div> -->
       </div>
-      <div class="dashboard-orders_orders mt-12">
+      <div class="dashboard-orders_orders my-12">
         <h2 class="dashboard-orders_orders-title mb-6">سفارشات قبلی</h2>
         <div class="no-orders">تاریخچه سفارش وجود ندارد...</div>
       </div>

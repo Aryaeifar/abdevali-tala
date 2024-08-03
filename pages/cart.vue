@@ -74,6 +74,9 @@
 <script setup>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
+// import { defineAsyncComponent } from 'vue';
+
+// const GiftCard = defineAsyncComponent(() => import('@/components/cards/giftCard.vue'));
 const type2 = ref({
   rewind: true,
   gap: "1rem",

@@ -30,12 +30,12 @@ const isActive = (link) => route.path.startsWith(link);
     <WidgetsBreadcrumb :items="breadcrumb" />
     <div class="dashboard-wrapper mb-8">
       <div class="dashboard-nav">
-        <div class="dashboard-nav_profile">
+        <!-- <div class="dashboard-nav_profile">
           <div>
             <img src="@/assets/images/profile.png" alt="" class="" />
           </div>
           <div>ساغر طاهری</div>
-        </div>
+        </div> -->
         <ul class="dashboard-nav_items">
           <li
             v-for="(item, i) in links"

@@ -629,7 +629,7 @@ body {
     font-weight: 700;
   }
   .main-footer_text {
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
   }
   .main-footer_copyright {
@@ -1420,6 +1420,7 @@ body {
         .account-wrapper_form-actions {
           .v-btn {
             border-radius: 10px;
+            letter-spacing: 0;
           }
         }
       }

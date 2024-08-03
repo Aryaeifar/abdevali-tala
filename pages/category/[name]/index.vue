@@ -133,10 +133,11 @@ const list = ref([
 ]);
 </script>
 <template>
-  <div class="isloading-page">
-    <span class="loader"></span>
-  </div>
+  
   <div class="products px-4 px-lg-16 py-2">
+    <!-- <div class="isloading-page">
+    <span class="loader"></span>
+  </div> -->
     <WidgetsBreadcrumb :items="items" />
     <div class="products-filter d-none d-lg-block">
       <v-row>
